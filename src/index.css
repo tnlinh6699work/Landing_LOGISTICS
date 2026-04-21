@@ -1,0 +1,24 @@
+/* src/index.css */
+@import "tailwindcss";
+
+@layer utilities {
+  @keyframes truck-appear {
+    from {
+      opacity: 0;
+      transform: translateX(100px) scale(0.95);
+    }
+    to {
+      opacity: 0.9;
+      transform: translateX(0) scale(1);
+    }
+  }
+
+  .animate-truck-appear {
+    animation: truck-appear 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  }
+
+  /* Tạo chiều sâu cho text trên nền tối */
+  .text-shadow-strong {
+    text-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
+  }
+}
